@@ -7,6 +7,9 @@ set(SOURCE_FILES main.cpp)
 add_executable(Ling ${SOURCE_FILES})
 
 link_directories(
-		/usr/include/
+		/usr/local/include/
+		/usr/include/boost
 )
-target_link_libraries(Ling freeling)
+target_link_libraries(Ling freeling
+		)
+
